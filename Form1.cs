@@ -18,5 +18,11 @@ namespace CSC240_09_01EnterInvoices_jrm
             amountBox.Clear();
             //executed and added 3 invoices to file.
         }
+
+        private void ViewFormButton_Click(object sender, EventArgs e)
+        {
+            ViewInvoicesForm viewInvoicesForm = new ViewInvoicesForm();
+            viewInvoicesForm.Show();
+        }
     }
 }
