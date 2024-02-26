@@ -1,7 +1,19 @@
-﻿namespace CSC240_09_01EnterInvoices_jrm
+﻿using System.IO;
+namespace CSC240_09_01EnterInvoices_jrm
 {
     partial class InvoiceForm
     {
+        const string DELIM = ",";
+        const string FILENAME =
+            @"C:\CSharp\Chapter14\Invoices.txt";
+        int num;
+        string name;
+        double amount;
+        static FileStream outFile = new
+            FileStream(FILENAME, FileMode.Create,
+            FileAccess.Write);
+        StreamWriter writer = new StreamWriter(outFile);
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
