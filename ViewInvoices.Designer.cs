@@ -104,6 +104,7 @@
             viewButton.TabIndex = 7;
             viewButton.Text = "View Records";
             viewButton.UseVisualStyleBackColor = true;
+            viewButton.Click += ViewButton_Click;
             // 
             // ViewInvoicesForm
             // 
