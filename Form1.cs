@@ -21,6 +21,8 @@ namespace CSC240_09_01EnterInvoices_jrm
 
         private void ViewFormButton_Click(object sender, EventArgs e)
         {
+            writer.Close();
+            outFile.Close();
             ViewInvoicesForm viewInvoicesForm = new ViewInvoicesForm();
             viewInvoicesForm.Show();
         }
