@@ -25,6 +25,8 @@ namespace CSC240_09_01EnterInvoices_jrm
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
+            writer.Close();
+            outFile.Close();
             if (disposing && (components != null))
             {
                 components.Dispose();
