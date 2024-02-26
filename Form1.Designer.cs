@@ -50,6 +50,7 @@ namespace CSC240_09_01EnterInvoices_jrm
             nameBox = new TextBox();
             amountBox = new TextBox();
             enterButton = new Button();
+            viewFormButton = new Button();
             SuspendLayout();
             // 
             // invoicePromptLabel
@@ -120,11 +121,22 @@ namespace CSC240_09_01EnterInvoices_jrm
             enterButton.UseVisualStyleBackColor = true;
             enterButton.Click += EnterButton_Click;
             // 
+            // viewFormButton
+            // 
+            viewFormButton.Location = new Point(109, 640);
+            viewFormButton.Name = "viewFormButton";
+            viewFormButton.Size = new Size(292, 69);
+            viewFormButton.TabIndex = 8;
+            viewFormButton.Text = "View Invoices";
+            viewFormButton.UseVisualStyleBackColor = true;
+            viewFormButton.Click += ViewFormButton_Click;
+            // 
             // InvoiceForm
             // 
             AutoScaleDimensions = new SizeF(20F, 48F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1069, 761);
+            Controls.Add(viewFormButton);
             Controls.Add(enterButton);
             Controls.Add(amountBox);
             Controls.Add(nameBox);
@@ -149,5 +161,6 @@ namespace CSC240_09_01EnterInvoices_jrm
         private TextBox nameBox;
         private TextBox amountBox;
         private Button enterButton;
+        private Button viewFormButton;
     }
 }
