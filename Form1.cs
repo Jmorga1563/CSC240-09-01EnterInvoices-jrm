@@ -16,6 +16,7 @@ namespace CSC240_09_01EnterInvoices_jrm
             invoiceBox.Clear();
             nameBox.Clear();
             amountBox.Clear();
+            //executed and added 3 invoices to file.
         }
     }
 }
