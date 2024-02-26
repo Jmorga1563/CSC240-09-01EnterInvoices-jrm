@@ -116,6 +116,7 @@ namespace CSC240_09_01EnterInvoices_jrm
             enterButton.TabIndex = 7;
             enterButton.Text = "Enter Record";
             enterButton.UseVisualStyleBackColor = true;
+            enterButton.Click += EnterButton_Click;
             // 
             // InvoiceForm
             // 
